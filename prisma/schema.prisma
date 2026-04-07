@@ -1,0 +1,77 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+}
+
+model Project {
+  id           Int      @id @default(autoincrement())
+  title        String
+  titleBn      String?
+  description  String
+  descriptionBn String?
+  image        String?
+  liveUrl      String?
+  repoUrl      String?
+  technologies String  // JSON array stored as string
+  category     String
+  featured     Boolean  @default(false)
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model BlogPost {
+  id          Int      @id @default(autoincrement())
+  title       String
+  titleBn     String?
+  slug        String   @unique
+  excerpt     String?
+  excerptBn   String?
+  content     String
+  contentBn   String?
+  image       String?
+  category    String
+  tags        String   // JSON array stored as string
+  published   Boolean  @default(false)
+  views       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Contact {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model PageView {
+  id        Int      @id @default(autoincrement())
+  page      String
+  createdAt DateTime @default(now())
+}
+
+model SiteSettings {
+  id           Int    @id @default(autoincrement())
+  key          String @unique
+  value        String
+  updatedAt    DateTime @updatedAt
+}
