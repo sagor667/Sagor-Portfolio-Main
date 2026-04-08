@@ -23,7 +23,7 @@ export default function Home() {
     // Fetch featured projects
     fetch('/api/projects?featured=true')
       .then(res => res.json())
-      .then(data => setProjects(data))
+      .then(data => setProjects(Array.isArray(data) ? data : []))
       .catch(err => console.error(err))
       .finally(() => setLoading(false));
       

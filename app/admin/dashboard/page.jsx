@@ -72,6 +72,7 @@ export default function AdminDashboard() {
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
           <button onClick={() => router.push('/admin/projects')} className="btn btn-primary">Add New Project</button>
           <button onClick={() => router.push('/admin/blog')} className="btn btn-secondary">Write Blog Post</button>
+          <button onClick={() => router.push('/admin/messages')} className="btn btn-outline" style={{ borderColor: 'var(--secondary)', color: 'var(--secondary-light)' }}>View Messages</button>
         </div>
       </div>
     </div>

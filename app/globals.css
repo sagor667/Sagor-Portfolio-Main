@@ -1268,6 +1268,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================================
    ADMIN DASHBOARD
    ============================================================ */
+.admin-mobile-header { display: none; }
 .admin-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -1543,8 +1544,20 @@ h1, h2, h3, h4, h5, h6 {
   .hero-floating-badge { position: static; white-space: normal; text-align: center; }
   .hero-floating-badge-1, .hero-floating-badge-2 { display: inline-flex; align-items: center; justify-content: center; width: auto; padding: 8px 14px; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .admin-mobile-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid var(--glass-border);  }
   .admin-layout { grid-template-columns: 1fr; }
-  .admin-sidebar { display: none; }
+  .admin-sidebar { 
+    position: fixed; 
+    left: -100%; 
+    top: 0; 
+    width: 280px; 
+    height: 100vh; 
+    z-index: 100002; 
+    transition: left var(--transition-base); 
+    display: flex;
+  }
+  .admin-sidebar.open { left: 0; }
+  .admin-sidebar-close { display: block !important; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
 }
