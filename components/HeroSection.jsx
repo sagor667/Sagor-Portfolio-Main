@@ -100,7 +100,7 @@ export default function HeroSection({ lang }) {
           <div className="hero-avatar-wrapper">
             <div className="hero-avatar-ring animate-float">
               <div className="hero-avatar-inner">
-                <span style={{ userSelect: 'none' }}>👨‍💻</span>
+                <Image src="/images/profile.jpg" alt={t.name} fill style={{ objectFit: 'cover' }} priority />
               </div>
             </div>
             <div className="hero-floating-badge hero-floating-badge-1">{t.badge1}</div>
