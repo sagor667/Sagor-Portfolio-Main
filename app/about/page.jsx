@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutPage() {
   const [lang, setLang] = useState('en');
@@ -134,9 +135,10 @@ export default function AboutPage() {
                  width: '100%', maxWidth: '400px', aspectRatio: '4/5', 
                  background: 'linear-gradient(135deg, var(--bg-800), var(--bg-900))',
                  borderRadius: 'var(--radius-xl)', border: '1px solid var(--glass-border)',
-                 display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', rotate: '2deg'
+                 display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', rotate: '2deg',
+                 position: 'relative', overflow: 'hidden'
                 }}>
-                 💼
+                 <Image src="/images/about-profile.jpg" alt="Md Sagor Ahmed" fill style={{ objectFit: 'cover' }} priority />
                </div>
                
                {/* Decorative dots */}
