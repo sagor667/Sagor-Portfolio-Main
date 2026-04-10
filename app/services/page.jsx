@@ -1,15 +1,14 @@
+'use client';
+import { useLanguage } from '../../context/LanguageContext';
 import './services.css';
-
-export const metadata = {
-  title: 'Services - Md Sagor Ahmed | WordPress Developer',
-  description: 'Explore the professional web development, WordPress, and e-commerce services offered by Md Sagor Ahmed.',
-};
 
 const services = [
   {
     id: 1,
-    title: 'Custom WordPress Development',
-    description: 'I build fully custom, responsive, and easy-to-manage WordPress websites tailored exactly to your brand needs. From custom themes to complex plugin integrations.',
+    titleEn: 'Custom WordPress Development',
+    titleBn: 'কাস্টম ওয়ার্ডপ্রেস ডেভেলপমেন্ট',
+    descEn: 'I build fully custom, responsive, and easy-to-manage WordPress websites tailored exactly to your brand needs. From custom themes to complex plugin integrations.',
+    descBn: 'আপনার ব্র্যান্ডের প্রয়োজন অনুযায়ী আমি সম্পূর্ণ কাস্টম, রেসপন্সিভ এবং সহজে পরিচালনাযোগ্য ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি। কাস্টম থিম থেকে শুরু করে জটিল প্লাগইন ইন্টিগ্রেশন—সবই এখানে পাবেন।',
     glowColor: 'rgba(79, 70, 229, 0.45)',
     iconColor: '#A5B4FC',
     iconPath: (
@@ -22,8 +21,10 @@ const services = [
   },
   {
     id: 2,
-    title: 'WooCommerce & E-commerce',
-    description: 'Transform your business into a digital storefront. I create robust, scalable, and optimized WooCommerce platforms that drive sales and streamline user shopping experiences.',
+    titleEn: 'WooCommerce & E-commerce',
+    titleBn: 'ই-কমার্স সমাধান (WooCommerce)',
+    descEn: 'Transform your business into a digital storefront. I create robust, scalable, and optimized WooCommerce platforms that drive sales and streamline user shopping experiences.',
+    descBn: 'আপনার ব্যবসাকে একটি শক্তিশালী ডিজিটাল স্টোরে রূপান্তর করুন। আমি এমন উন্নত ই-কমার্স প্ল্যাটফর্ম তৈরি করি যা আপনার বিক্রি বাড়াতে এবং গ্রাহকদের কেনাকাটার অভিজ্ঞতা সহজ করতে সাহায্য করবে।',
     glowColor: 'rgba(6, 182, 212, 0.45)',
     iconColor: '#22D3EE',
     iconPath: (
@@ -36,8 +37,10 @@ const services = [
   },
   {
     id: 3,
-    title: 'Full-Stack Web Apps',
-    description: 'Leveraging Next.js, React, and Node.js to build powerful, lightning-fast, and dynamic web applications for complex business logistics and dashboards.',
+    titleEn: 'Full-Stack Web Apps',
+    titleBn: 'ফুল-স্ট্যাক ওয়েব অ্যাপস',
+    descEn: 'Leveraging Next.js, React, and Node.js to build powerful, lightning-fast, and dynamic web applications for complex business logistics and dashboards.',
+    descBn: 'Next.js, React এবং Node.js ব্যবহার করে আমি দ্রুতগতির এবং ডায়নামিক ওয়েব অ্যাপ্লিকেশন তৈরি করি, যা আপনার ব্যবসার জটিল লজিক এবং ড্যাশবোর্ড পরিচালনার জন্য উপযুক্ত।',
     glowColor: 'rgba(139, 92, 246, 0.45)',
     iconColor: '#C4B5FD',
     iconPath: (
@@ -49,8 +52,10 @@ const services = [
   },
   {
     id: 4,
-    title: 'Landing Pages & UI/UX',
-    description: 'High-converting, visually stunning landing pages designed with modern principles like glassmorphism to capture leads and make a perfect first impression.',
+    titleEn: 'Landing Pages & UI/UX',
+    titleBn: 'ল্যান্ডিং পেজ এবং ইউআই/ইউএক্স',
+    descEn: 'High-converting, visually stunning landing pages designed with modern principles like glassmorphism to capture leads and make a perfect first impression.',
+    descBn: 'আধুনিক ডিজাইন এবং নিখুঁত ইউজার এক্সপেরিয়েন্সের মাধ্যমে আমি এমন ল্যান্ডিং পেজ তৈরি করি যা দর্শকদের আকৃষ্ট করবে এবং আপনার ব্যবসার প্রবৃদ্ধি নিশ্চিত করবে।',
     glowColor: 'rgba(234, 179, 8, 0.45)',
     iconColor: '#FCD34D',
     iconPath: (
@@ -61,8 +66,10 @@ const services = [
   },
   {
     id: 5,
-    title: 'Performance Optimization',
-    description: 'Is your website slow? I analyze and optimize speeds, core web vitals, and asset delivery to ensure millisecond load times, reducing your bounce rate drastically.',
+    titleEn: 'Performance Optimization',
+    titleBn: 'সার্ভার ও সাইট অপ্টিমাইজেশন',
+    descEn: 'Is your website slow? I analyze and optimize speeds, core web vitals, and asset delivery to ensure millisecond load times, reducing your bounce rate drastically.',
+    descBn: 'আপনার ওয়েবসাইট কি ধীরগতির? আমি লোডিং স্পিড এবং পারফরম্যান্স অপ্টিমাইজ করার মাধ্যমে আপনার সাইটকে সুপারফাস্ট করে তুলি, যা ভিজিটরদের রিটেনশন বাড়াতে সাহায্য করে।',
     glowColor: 'rgba(16, 185, 129, 0.45)',
     iconColor: '#6EE7B7',
     iconPath: (
@@ -73,31 +80,58 @@ const services = [
   },
   {
     id: 6,
-    title: 'SEO & Security Automation',
-    description: 'Implementing on-page SEO best practices and robust security measures to protect your digital assets against vulnerabilities and ensure maximum visibility on Google.',
+    titleEn: 'SEO & Security Automation',
+    titleBn: 'এসইও এবং সিকিউরিটি অটোমেশন',
+    descEn: 'Implementing on-page SEO best practices and robust security measures to protect your digital assets against vulnerabilities and ensure maximum visibility on Google.',
+    descBn: 'আমি অন-পেজ এসইও এবং মজবুত সিকিউরিটি নিশ্চিত করি যাতে আপনার ওয়েবসাইট গুগল র‍্যাঙ্কিংয়ে এগিয়ে থাকে এবং সব ধরনের সাইবার ঝুঁকি থেকে নিরাপদ থাকে।',
     glowColor: 'rgba(244, 63, 94, 0.45)',
     iconColor: '#FDA4AF',
     iconPath: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        <path d="7 11V7a5 5 0 0 1 10 0v4" />
       </svg>
     ),
   },
 ];
 
+const t = {
+  en: {
+    tag: 'What I Do',
+    title: 'My Expert Services',
+    subtitle: "Providing end-to-end digital solutions from spectacular UI designs to robust backend and scalable e-commerce infrastructure. Let's build something great.",
+    ctaTitle: 'Ready to Start Your Project?',
+    ctaText: "Whether you need a simple WordPress blog, a complex e-commerce platform, or a lightning-fast custom web app, I'm ready to bring your vision to reality.",
+    quote: 'Get a Free Quote',
+    work: 'View My Work',
+    discuss: 'Discuss Project'
+  },
+  bn: {
+    tag: 'আমি যা করি',
+    title: 'আমার বিশেষ সেবাসমূহ',
+    subtitle: 'ইউআই ডিজাইন থেকে শুরু করে ব্যাকএন্ড এবং স্কেলেবল ই-কমার্স অবকাঠামো—আমি দিচ্ছি আপনার ব্যবসার জন্য পূর্ণাঙ্গ ডিজিটাল সমাধান। চলুন একসাথে দারুণ কিছু তৈরি করি।',
+    ctaTitle: 'আপনার প্রজেক্ট শুরু করতে প্রস্তুত?',
+    ctaText: 'একটি সাধারণ ওয়ার্ডপ্রেস ব্লগ থেকে শুরু করে জটিল ই-কমার্স প্ল্যাটফর্ম বা সুপারফাস্ট ওয়েব অ্যাপ—আপনার যেকোনো স্বপ্নকে বাস্তবে রূপ দিতে আমি প্রস্তুত।',
+    quote: 'ফ্রি কোট নিন',
+    work: 'আমার কাজগুলো দেখুন',
+    discuss: 'প্রজেক্ট নিয়ে আলাপ করি'
+  }
+};
+
 export default function ServicesPage() {
+  const { lang } = useLanguage();
+
+  const text = t[lang] || t.en;
+
   return (
     <div className="services-page">
       <div className="container">
 
         {/* Header */}
         <div className="section-header services-header">
-          <div className="section-tag">What I Do</div>
-          <h1 className="section-title">My Expert Services</h1>
-          <p className="section-subtitle">
-            Providing end-to-end digital solutions from spectacular UI designs to robust backend and scalable e-commerce infrastructure. Let&apos;s build something great.
-          </p>
+          <div className="section-tag">{text.tag}</div>
+          <h1 className="section-title">{text.title}</h1>
+          <p className="section-subtitle">{text.subtitle}</p>
         </div>
 
         {/* Services Grid */}
@@ -114,12 +148,16 @@ export default function ServicesPage() {
               </div>
 
               <div className="service-card-body">
-                <h3 className="service-card-title">{service.title}</h3>
-                <p className="service-card-desc">{service.description}</p>
+                <h3 className="service-card-title">
+                  {lang === 'bn' ? service.titleBn : service.titleEn}
+                </h3>
+                <p className="service-card-desc">
+                  {lang === 'bn' ? service.descBn : service.descEn}
+                </p>
               </div>
 
               <a href="/contact" className="service-cta-link">
-                Discuss Project
+                {text.discuss}
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14" />
                   <path d="m12 5 7 7-7 7" />
@@ -133,13 +171,11 @@ export default function ServicesPage() {
         <div className="services-cta-banner">
           <div className="services-cta-bg" />
           <div className="services-cta-content">
-            <h2 className="services-cta-title">Ready to Start Your Project?</h2>
-            <p className="services-cta-text">
-              Whether you need a simple WordPress blog, a complex e-commerce platform, or a lightning-fast custom web app, I&apos;m ready to bring your vision to reality.
-            </p>
+            <h2 className="services-cta-title">{text.ctaTitle}</h2>
+            <p className="services-cta-text">{text.ctaText}</p>
             <div className="services-cta-actions">
-              <a href="/contact" className="btn btn-primary">Get a Free Quote</a>
-              <a href="/projects" className="btn btn-secondary">View My Work</a>
+              <a href="/contact" className="btn btn-primary">{text.quote}</a>
+              <a href="/projects" className="btn btn-secondary">{text.work}</a>
             </div>
           </div>
         </div>

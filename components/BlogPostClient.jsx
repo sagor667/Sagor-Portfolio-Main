@@ -97,7 +97,7 @@ export default function BlogPostClient({ post }) {
         </div>
 
         <div style={{ marginTop: '40px', paddingTop: '24px', borderTop: '1px solid var(--glass-border)', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-          <span style={{ color: 'var(--text-muted)', marginRight: '8px', alignSelf: 'center' }}>{lang === 'bn' ? 'ট্যাগস:' : 'Tags:'}</span>
+          <span style={{ color: 'var(--text-muted)', marginRight: '8px', alignSelf: 'center' }}>{lang === 'bn' ? 'ট্যাগসমূহ:' : 'Tags:'}</span>
           {tags.map(tag => (
             <span key={tag} className="tag">{tag}</span>
           ))}

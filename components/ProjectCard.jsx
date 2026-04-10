@@ -1,6 +1,9 @@
+'use client';
+import { useLanguage } from '../context/LanguageContext';
 import Link from 'next/link';
 
-export default function ProjectCard({ project, lang }) {
+export default function ProjectCard({ project }) {
+  const { lang } = useLanguage();
   const isBn = lang === 'bn';
   const title = isBn && project.titleBn ? project.titleBn : project.title;
   const description = isBn && project.descriptionBn ? project.descriptionBn : project.description;

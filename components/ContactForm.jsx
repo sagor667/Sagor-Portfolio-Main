@@ -1,7 +1,9 @@
 'use client';
 import { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
-export default function ContactForm({ lang }) {
+export default function ContactForm() {
+  const { lang } = useLanguage();
   const [status, setStatus] = useState('idle');
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
@@ -16,13 +18,13 @@ export default function ContactForm({ lang }) {
       error: 'Something went wrong. Please try again.',
     },
     bn: {
-      name: 'আপনার নাম',
+      name: 'আপনার পূর্ণ নাম',
       email: 'ইমেইল ঠিকানা',
       message: 'আপনার বার্তা',
-      btn: 'বার্তা পাঠান',
+      btn: 'মেসেজ পাঠান',
       btnSending: 'পাঠানো হচ্ছে...',
-      success: 'বার্তা সফলভাবে পাঠানো হয়েছে! আমি শীঘ্রই আপনার সাথে যোগাযোগ করব।',
-      error: 'কিছু ভুল হয়েছে। আবার চেষ্টা করুন।',
+      success: 'আপনার মেসেজটি সফলভাবে পাওয়া গেছে! আমি শীঘ্রই আপনার সাথে যোগাযোগ করব।',
+      error: 'দুঃখিত, কোথাও কোনো সমস্যা হয়েছে। দয়া করে আবার চেষ্টা করুন।',
     }
   };
 

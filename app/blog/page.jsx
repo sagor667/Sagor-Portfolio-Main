@@ -1,16 +1,14 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 import Link from 'next/link';
 
 export default function BlogPage() {
-  const [lang, setLang] = useState('en');
+  const { lang } = useLanguage();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('lang') || 'en';
-    setLang(savedLang);
-
     fetch('/api/blog')
       .then(res => res.json())
       .then(data => setPosts(Array.isArray(data) ? data : []))
@@ -26,8 +24,8 @@ export default function BlogPage() {
     },
     bn: {
       title: 'ব্লগ ও প্রবন্ধ',
-      subtitle: 'ওয়েব ডেভেলপমেন্ট সম্পর্কে আমার অভিজ্ঞতা, টিউটোরিয়াল এবং আপডেট।',
-      readMore: 'আরও পড়ুন',
+      subtitle: 'ওয়েব ডেভেলপমেন্টের যাত্রা থেকে শেখা বিভিন্ন অভিজ্ঞতা, টিউটোরিয়াল এবং আপডেট।',
+      readMore: 'বিস্তারিত পড়ুন',
     }
   };
 

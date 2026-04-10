@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -21,32 +21,26 @@ const content = {
     badge2: '🏆 Top Rated Developer',
   },
   bn: {
-    greeting: '👋 আমি হলাম',
+    greeting: '👋 আসসালামু আলাইকুম, আমি',
     name: 'মোঃ সাগর আহমেদ',
-    title: 'ওয়ার্ডপ্রেস ডেভেলপার',
+    title: 'একজন দক্ষ ওয়ার্ডপ্রেস ডেভেলপার',
     highlight: 'ও ওয়েব ডিজাইনার',
-    subtitle: 'আমি উচ্চ-পারফরম্যান্স, সুন্দর ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি যা দর্শকদের ক্লায়েন্টে রূপান্তরিত করে।',
-    hire: 'আমাকে ভাড়া করুন',
-    projects: 'প্রজেক্ট দেখুন',
+    subtitle: 'আমি উন্নত মানের এবং দৃষ্টিনন্দন ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি, যা আপনার ব্যবসার প্রসার ঘটাতে এবং দর্শকদের কাস্টমারে রূপান্তর করতে সহায়তা করে।',
+    hire: 'চলুন যোগাযোগ করি',
+    projects: 'আমার কাজগুলো দেখুন',
     stats: [
       { value: '৫+', label: 'বছরের অভিজ্ঞতা' },
-      { value: '১০০+', label: 'প্রজেক্ট সম্পন্ন' },
+      { value: '১০০+', label: 'সফল প্রজেক্ট' },
       { value: '৮০+', label: 'সন্তুষ্ট ক্লায়েন্ট' },
     ],
-    badge1: '⚡ ফ্রিল্যান্সে উপলব্ধ',
-    badge2: '🏆 শীর্ষ রেটেড ডেভেলপার',
+    badge1: '⚡ নতুন প্রজেক্টের জন্য প্রস্তুত',
+    badge2: '🏆 টপ রেটেড ডেভেলপার',
   },
 };
 
-export default function HeroSection({ lang }) {
+export default function HeroSection() {
+  const { lang } = useLanguage();
   const t = content[lang] || content.en;
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
 
   return (
     <section className="hero" id="hero">

@@ -1,14 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 import ContactForm from '../../components/ContactForm';
 
 export default function ContactPage() {
-  const [lang, setLang] = useState('en');
-
-  useEffect(() => {
-    const savedLang = localStorage.getItem('lang') || 'en';
-    setLang(savedLang);
-  }, []);
+  const { lang } = useLanguage();
 
   const t = {
     en: {
@@ -21,10 +16,10 @@ export default function ContactPage() {
     },
     bn: {
       title: 'যোগাযোগ করুন',
-      subtitle: 'মনোমর কোনো প্রকল্প আছে বা আলোচনা করতে চান? নিচে মেসেজ দিন অথবা সরাসরি যোগাযোগ করুন।',
+      subtitle: 'আপনার মনে কী কোনো প্রজেক্ট আছে বা কোনো বিষয়ে আলোচনা করতে চান? নিচে মেসেজ দিন অথবা আমার সাথে সরাসরি যোগাযোগ করুন।',
       email: 'ইমেইল',
       phone: 'হোয়াটসঅ্যাপ / ফোন',
-      location: 'অবস্থান',
+      location: 'বর্তমান অবস্থান',
       directContact: 'সরাসরি যোগাযোগ',
     }   
   };
@@ -87,7 +82,7 @@ export default function ContactPage() {
             <h2 style={{ fontSize: '1.5rem', marginBottom: '24px' }}>
               {lang === 'bn' ? 'আমাকে মেসেজ দিন' : 'Send me a message'}
             </h2>
-            <ContactForm lang={lang} />
+            <ContactForm />
           </div>
         </div>
 

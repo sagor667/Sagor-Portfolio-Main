@@ -1,6 +1,20 @@
 import './globals.css';
 import { Providers } from './Providers';
 import LayoutWrapper from '../components/LayoutWrapper';
+import { Poppins, Hind_Siliguri } from 'next/font/google';
+
+const poppins = Poppins({ 
+  subsets: ['latin'], 
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-poppins' 
+});
+
+const hindSiliguri = Hind_Siliguri({ 
+  weight: ['300', '400', '500', '600', '700'], 
+  subsets: ['bengali', 'latin'], 
+  variable: '--font-hind-siliguri',
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Md Sagor Ahmed – WordPress Developer Bangladesh',
@@ -9,8 +23,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body suppressHydrationWarning>
+    <html lang="en" className={`${poppins.variable} ${hindSiliguri.variable}`}>
+      <body className="antialiased" suppressHydrationWarning>
         <Providers>
           <LayoutWrapper>
             {children}

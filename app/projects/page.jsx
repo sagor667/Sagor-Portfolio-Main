@@ -1,17 +1,15 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 import ProjectCard from '../../components/ProjectCard';
 
 export default function ProjectsPage() {
-  const [lang, setLang] = useState('en');
+  const { lang } = useLanguage();
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('lang') || 'en';
-    setLang(savedLang);
-
     // Initial fetch of all projects
     fetch('/api/projects')
       .then(res => res.json())
@@ -28,17 +26,21 @@ export default function ProjectsPage() {
     },
     bn: {
       title: 'আমার পোর্টফোলিও',
-      subtitle: 'ওয়ার্ডপ্রেস, ওয়েব ডিজাইন এবং ফুল-স্ট্যাক ডেভেলপমেন্টে আমার সাম্প্রতিক কাজের সংগ্রহ।',
+      subtitle: 'ওয়ার্ডপ্রেস, ওয়েব ডিজাইন এবং ফুল-স্ট্যাক ডেভেলপমেন্টে আমার সাম্প্রতিক কাজগুলোর একটি বাছাইকৃত সংগ্রহ।',
       filters: ['সব', 'ই-কমার্স', 'বিজনেস', 'পোর্টফোলিও', 'রিয়েল এস্টেট', 'রেস্টুরেন্ট', 'ব্লগ'],
     }
   };
   
   const text = t[lang] || t.en;
 
+  // Handle filter reset when language changes to ensure valid filter selection
+  useEffect(() => {
+    setFilter(text.filters[0]);
+  }, [lang, text.filters]);
+
   const filteredProjects = filter === 'All' || filter === 'সব' 
     ? projects 
     : projects.filter(p => {
-        // Map bangla filter back to english category if needed, or check both
         const index = text.filters.indexOf(filter);
         const englishCategory = t.en.filters[index];
         return p.category === englishCategory || p.category === filter;
@@ -74,7 +76,7 @@ export default function ProjectsPage() {
         ) : (
           <div className="grid-3 animate-fade-up">
             {filteredProjects.map(project => (
-              <ProjectCard key={project.id} project={project} lang={lang} />
+              <ProjectCard key={project.id} project={project} />
             ))}
             {filteredProjects.length === 0 && (
               <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '40px' }}>

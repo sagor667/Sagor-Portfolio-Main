@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/', labelEn: 'Home', labelBn: 'হোম' },
-  { href: '/about', labelEn: 'About', labelBn: 'আমার সম্পর্কে' },
-  { href: '/projects', labelEn: 'Projects', labelBn: 'প্রজেক্ট' },
-  { href: '/services', labelEn: 'Services', labelBn: 'সেবা' },
+  { href: '/about', labelEn: 'About', labelBn: 'পরিচিতি' },
+  { href: '/projects', labelEn: 'Projects', labelBn: 'প্রজেক্টস' },
+  { href: '/services', labelEn: 'Services', labelBn: 'সেবাসমূহ' },
   { href: '/blog', labelEn: 'Blog', labelBn: 'ব্লগ' },
   { href: '/contact', labelEn: 'Contact', labelBn: 'যোগাযোগ' },
 ];
@@ -95,7 +95,7 @@ export default function Navbar({ lang, setLang }) {
           </Link>
         ))}
         <Link href="/contact" className="btn btn-primary" style={{ marginTop: 'auto' }}>
-          {lang === 'bn' ? 'আমাকে ভাড়া করুন' : 'Hire Me'}
+          {lang === 'bn' ? 'চলুন শুরু করি' : 'Hire Me'}
         </Link>
       </div>
     </>
