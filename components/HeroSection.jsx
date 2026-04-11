@@ -94,7 +94,7 @@ export default function HeroSection() {
           <div className="hero-avatar-wrapper">
             <div className="hero-avatar-ring animate-float">
               <div className="hero-avatar-inner">
-                <Image src="/images/profile.jpg" alt={t.name} fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority />
+                <Image src="/images/blog-1.jpg" alt={t.name} fill style={{ objectFit: 'cover', objectPosition: 'center' }} priority />
               </div>
             </div>
             <div className="hero-floating-badge hero-floating-badge-1">{t.badge1}</div>
