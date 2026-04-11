@@ -133,7 +133,7 @@ export default function AboutPage() {
                  display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', rotate: '2deg',
                  position: 'relative', overflow: 'hidden'
                 }}>
-                 <Image src="/images/about-profile.jpg" alt="Md Sagor Ahmed" fill style={{ objectFit: 'cover' }} priority />
+                 <Image src="/images/about-profile.png" alt="Md Sagor Ahmed" fill style={{ objectFit: 'cover' }} priority />
                </div>
                
                {/* Decorative dots */}
