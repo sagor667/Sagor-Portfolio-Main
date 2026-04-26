@@ -22,16 +22,16 @@ export default function Home() {
   const t = {
     en: {
       servicesTitle: 'My Expertise',
-      servicesSubtitle: 'Comprehensive WordPress solutions tailored to elevate your brand.',
+      servicesSubtitle: 'Full-stack web development and WordPress solutions tailored to elevate your brand and grow your business.',
       projectsTitle: 'Featured Projects',
       projectsSubtitle: 'Some of my recent work that showcases my skills and experience.',
       viewAll: 'View All Projects'
     },
     bn: {
       servicesTitle: 'আমার দক্ষতাসমূহ',
-      servicesSubtitle: 'আপনার ব্র্যান্ডকে অনন্য উচ্চতায় নিয়ে যেতে আধুনিক ওয়ার্ডপ্রেস সমাধান।',
+      servicesSubtitle: 'আপনার ব্র্যান্ডকে এগিয়ে নিতে ফুলস্ট্যাক ওয়েব ডেভেলপমেন্ট এবং আধুনিক ওয়ার্ডপ্রেস সমাধান।',
       projectsTitle: 'আমার বাছাইকৃত প্রজেক্টস',
-      projectsSubtitle: 'আমার সাম্প্রতিক কিছু কাজ যা আমার দক্ষতা এবং অভিজ্ঞতার পরিচয় দেয়।',
+      projectsSubtitle: 'আমার সাম্প্রতিক কিছু কাজ যা আমার দক্ষতা এবং অভিজ্ঞতার পরিচয় দেয়।',
       viewAll: 'সব প্রজেক্ট দেখুন'
     }
   };
@@ -40,25 +40,25 @@ export default function Home() {
 
   const services = [
     {
-      icon: '🎨',
-      titleEn: 'Custom WordPress Design',
-      titleBn: 'কাস্টম ওয়ার্ডপ্রেস ডিজাইন',
-      descEn: 'Bespoke themes built from scratch using modern frameworks and best practices to match your unique brand identity.',
-      descBn: 'আপনার ব্র্যান্ডের অনন্য পরিচয়ের জন্য আধুনিক ফ্রেমওয়ার্ক ব্যবহার করে সম্পূর্ণ নতুনভাবে তৈরি প্রিমিয়াম থিম।'
+      icon: '🚀',
+      titleEn: 'Full-Stack Web Development',
+      titleBn: 'ফুলস্ট্যাক ওয়েব ডেভেলপমেন্ট',
+      descEn: 'End-to-end web applications built with React, Next.js, Node.js, and modern databases — scalable, fast, and production-ready.',
+      descBn: 'React, Next.js, Node.js এবং আধুনিক ডেটাবেজ ব্যবহার করে সম্পূর্ণ প্রোডাকশন-রেডি ফুলস্ট্যাক ওয়েব অ্যাপ্লিকেশন তৈরি করি।'
     },
     {
-      icon: '🛒',
-      titleEn: 'WooCommerce Development',
-      titleBn: 'ই-কমার্স সমাধান (WooCommerce)',
-      descEn: 'Fully functional, secure, and scalable online stores with advanced payment gateways and inventory management.',
-      descBn: 'উন্নত পেমেন্ট ব্যবস্থা এবং ইনভেন্টরি ম্যানেজমেন্ট সহ সম্পূর্ণ সুরক্ষিত এবং পরিমাপযোগ্য অনলাইন স্টোর।'
+      icon: '🎨',
+      titleEn: 'WordPress & WooCommerce',
+      titleBn: 'ওয়ার্ডপ্রেস ও WooCommerce',
+      descEn: 'Custom WordPress themes, plugins, and fully functional WooCommerce stores with secure payment gateways and inventory management.',
+      descBn: 'কাস্টম ওয়ার্ডপ্রেস থিম, প্লাগইন এবং উন্নত পেমেন্ট ব্যবস্থাসহ সম্পূর্ণ সুরক্ষিত WooCommerce অনলাইন স্টোর তৈরি করি।'
     },
     {
       icon: '⚡',
-      titleEn: 'Performance Optimization',
-      titleBn: 'সাইট স্পিড অপ্টিমাইজেশন',
-      descEn: 'Speed up your website to load under 2 seconds, improving user experience and Google SEO rankings.',
-      descBn: 'আপনার ওয়েবসাইটের গতি বাড়িয়ে ২ সেকেন্ডের নিচে নামিয়ে আনা, যা ব্যবহারকারীর অভিজ্ঞতা এবং গুগল এসইও র‍্যাঙ্কিং উন্নত করবে।'
+      titleEn: 'Performance & SEO Optimization',
+      titleBn: 'পারফরম্যান্স ও এসইও অপ্টিমাইজেশন',
+      descEn: 'Speed up your website to load under 2 seconds and rank higher on Google with technical SEO, Core Web Vitals, and best practices.',
+      descBn: 'আপনার ওয়েবসাইটের গতি ২ সেকেন্ডের নিচে নামিয়ে আনা এবং টেকনিক্যাল এসইও ও Core Web Vitals অপ্টিমাইজেশনের মাধ্যমে গুগলে উচ্চ র‍্যাঙ্কিং নিশ্চিত করা।'
     }
   ];
 

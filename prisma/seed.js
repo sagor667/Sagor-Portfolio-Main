@@ -163,11 +163,11 @@ async function main() {
   // Create site settings
   const settings = [
     { key: 'site_name', value: 'Md Sagor Ahmed' },
-    { key: 'site_tagline', value: 'WordPress Developer & Web Designer' },
+    { key: 'site_tagline', value: 'FullStack Developer & WordPress Developer' },
     { key: 'hero_title_en', value: 'Building Powerful WordPress Websites' },
     { key: 'hero_title_bn', value: 'শক্তিশালী ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করছি' },
-    { key: 'hero_subtitle_en', value: 'I craft high-performance, beautiful WordPress websites that convert visitors into clients.' },
-    { key: 'hero_subtitle_bn', value: 'আমি উচ্চ-পারফরম্যান্স, সুন্দর ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি যা দর্শকদের ক্লায়েন্টে রূপান্তরিত করে।' },
+    { key: 'hero_subtitle_en', value: 'I craft high-performance full-stack web applications and custom WordPress websites that convert visitors into clients.' },
+    { key: 'hero_subtitle_bn', value: 'আমি উন্নত মানের ফুলস্ট্যাক ওয়েব অ্যাপ্লিকেশন এবং দৃষ্টিনন্দন ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি যা দর্শকদের ক্লায়েন্টে রূপান্তরিত করে।' },
     { key: 'whatsapp', value: '+8801XXXXXXXXX' },
     { key: 'email', value: 'sagor@example.com' },
     { key: 'location', value: 'Dhaka, Bangladesh' },

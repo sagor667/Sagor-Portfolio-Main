@@ -7,9 +7,9 @@ const content = {
   en: {
     greeting: '👋 Hello, I\'m',
     name: 'Md Sagor Ahmed',
-    title: 'WordPress Developer',
-    highlight: '& Web Designer',
-    subtitle: 'I craft high-performance, beautiful WordPress websites that convert visitors into clients. Based in Bangladesh, serving clients worldwide.',
+    title: 'FullStack Developer',
+    highlight: 'and Wordpress Developer',
+    subtitle: 'I craft high-performance full-stack web applications and custom WordPress websites that convert visitors into clients. Based in Bangladesh, serving clients worldwide.',
     hire: 'Hire Me',
     projects: 'View Projects',
     stats: [
@@ -23,9 +23,9 @@ const content = {
   bn: {
     greeting: '👋 আসসালামু আলাইকুম, আমি',
     name: 'মোঃ সাগর আহমেদ',
-    title: 'একজন দক্ষ ওয়ার্ডপ্রেস ডেভেলপার',
-    highlight: 'ও ওয়েব ডিজাইনার',
-    subtitle: 'আমি উন্নত মানের এবং দৃষ্টিনন্দন ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি, যা আপনার ব্যবসার প্রসার ঘটাতে এবং দর্শকদের কাস্টমারে রূপান্তর করতে সহায়তা করে।',
+    title: 'ফুলস্ট্যাক ডেভেলপার',
+    highlight: 'এবং ওয়ার্ডপ্রেস ডেভেলপার',
+    subtitle: 'আমি উন্নত মানের ফুলস্ট্যাক ওয়েব অ্যাপ্লিকেশন এবং দৃষ্টিনন্দন ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি, যা আপনার ব্যবসার প্রসার ঘটাতে এবং দর্শকদের কাস্টমারে রূপান্তর করতে সহায়তা করে।',
     hire: 'চলুন যোগাযোগ করি',
     projects: 'আমার কাজগুলো দেখুন',
     stats: [
