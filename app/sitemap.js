@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-const BASE_URL = 'https://sagorahmed.vercel.app'; // 🔁 Replace with your real domain
+const BASE_URL = 'https://sagor-ahmed.vercel.app';
 
 export default async function sitemap() {
   // ─── Static Pages ────────────────────────────────────────────────────────────
@@ -48,7 +48,7 @@ export default async function sitemap() {
   // ─── Dynamic Blog Posts ───────────────────────────────────────────────────────
   let blogPages = [];
   try {
-    const posts = await prisma.blog.findMany({
+    const posts = await prisma.blogPost.findMany({
       select: {
         slug: true,
         updatedAt: true,
@@ -76,3 +76,4 @@ export default async function sitemap() {
 
   return [...staticPages, ...blogPages];
 }
+
