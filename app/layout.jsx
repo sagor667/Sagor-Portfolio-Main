@@ -19,6 +19,14 @@ const hindSiliguri = Hind_Siliguri({
 export const metadata = {
   title: 'Md Sagor Ahmed – WordPress Developer Bangladesh',
   description: 'Md Sagor Ahmed – Professional WordPress Developer from Bangladesh.',
+  verification: {
+    google: 'MKOYeaaVCy2FGNy4H8OMmjE00a1w84vJ6MrFZ8ks3-s',
+  },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
