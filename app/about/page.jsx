@@ -12,7 +12,7 @@ export default function AboutPage() {
       subtitle: 'Passionate about creating digital experiences that map to business success.',
       storyTitle: 'My Story',
       storyText: [
-        'I am Md Sagor Ahmed, a dedicated Full-Stack Web Developer and WordPress Developer based in Bangladesh. With over 5 years of experience in the web development industry, I specialize in creating high-performance, secure, and visually appealing web applications and WordPress websites.',
+        'I am Md Sagor Ahmed, a dedicated Full-Stack Web Developer and WordPress Developer based in Bangladesh. With over 3+ years of experience in the web development industry, I specialize in creating high-performance, secure, and visually appealing web applications and WordPress websites.',
         'My journey started with a deep curiosity about how websites operate, which led me to dive deep into modern front-end and back-end frameworks including Next.js, React, Node.js, and PHP. Today, I help businesses worldwide establish a strong online presence through full-stack web solutions, custom WordPress themes, and complex WooCommerce integrations.',
         'I believe in a user-centric approach where design meets robust functionality. Every project I undertake is built with scalability, SEO, speed, and accessibility in mind, ensuring my clients not only get a beautiful application but also a powerful business tool.',
       ],
@@ -69,7 +69,7 @@ export default function AboutPage() {
       subtitle: 'আপনার ব্যবসায়ের সাফল্য নিশ্চিত করতে আধুনিক ডিজিটাল অভিজ্ঞতা তৈরিতে আমি নিবেদিত।',
       storyTitle: 'আমার গল্প',
       storyText: [
-        '"হ্যালো, আমি মো. সাগর আহমেদ। গত ৫ বছরেরও বেশি সময় ধরে কাজ করছি ফুল-স্ট্যাক ওয়েব ডেভেলপমেন্ট এবং ওয়ার্ডপ্রেস নিয়ে। কৌতূহল থেকে শুরু হওয়া এই যাত্রায় আজ আমি Next.js, React এবং Node.js-এর মতো আধুনিক টেকনোলজি ব্যবহার করে জটিল সব ডিজিটাল সমস্যার সমাধান করছি।',
+        '"হ্যালো, আমি মো. সাগর আহমেদ। গত ৩+ বছরেরও বেশি সময় ধরে কাজ করছি ফুল-স্ট্যাক ওয়েব ডেভেলপমেন্ট এবং ওয়ার্ডপ্রেস নিয়ে। কৌতূহল থেকে শুরু হওয়া এই যাত্রায় আজ আমি Next.js, React এবং Node.js-এর মতো আধুনিক টেকনোলজি ব্যবহার করে জটিল সব ডিজিটাল সমস্যার সমাধান করছি।',
         'আমি মনে করি, একটি ওয়েবসাইট বা অ্যাপ্লিকেশন কেবল সুন্দর দেখালেই হয় না, সেটির পারফরম্যান্স হতে হয় নিখুঁত। তাই আমি এমন সব কাস্টম ই-কমার্স এবং ওয়েব সলিউশন তৈরি করি যা শুধু দৃষ্টিনন্দনই নয়, বরং স্কেলেবল এবং এসইও ফ্রেন্ডলি।',
         'দেশি-বিদেশি অসংখ্য ক্লায়েন্টের সাথে কাজ করার অভিজ্ঞতায় আমি বুঝেছি, একটি সঠিক টেকনিক্যাল সলিউশন কীভাবে একটি ব্যবসাকে বদলে দিতে পারে। আপনি যদি আপনার ব্যবসার অনলাইন উপস্থিতিকে পরবর্তী ধাপে নিয়ে যেতে চান, তবে আমি আছি আপনার পাশে।',
       ],
