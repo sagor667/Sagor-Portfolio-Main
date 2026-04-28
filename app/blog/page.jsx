@@ -32,7 +32,7 @@ export default function BlogPage() {
   const text = t[lang] || t.en;
 
   return (
-    <div className="section" style={{ minHeight: '100vh', paddingTop: '140px' }}>
+    <div className="section" style={{ minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">
         <div className="section-header">
           <span className="section-tag">{lang === 'en' ? 'Insights' : 'অন্তর্দৃষ্টি'}</span>

@@ -47,7 +47,7 @@ export default function ProjectsPage() {
       });
 
   return (
-    <div className="section" style={{ minHeight: '100vh', paddingTop: '140px' }}>
+    <div className="section" style={{ minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">
         <div className="section-header">
           <span className="section-tag">{lang === 'en' ? 'Projects' : 'প্রজেক্টসমূহ'}</span>

@@ -1581,3 +1581,183 @@ body[data-lang="bn"] .section-title, body[data-lang="bn"] .navbar-logo {
   .section-title { font-size: 1.75rem; }
   .hero-stats { flex-wrap: wrap; gap: 20px; }
 }
+
+/* ============================================================
+   EXTRA-SMALL SCREENS (320px) — Smallest Common Mobile
+   ============================================================ */
+@media (max-width: 360px) {
+  /* Tighten container so nothing bleeds off-screen */
+  :root {
+    --container-padding: 12px;
+    --section-padding: clamp(40px, 8vw, 80px);
+  }
+
+  /* ── Navbar ── */
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+
+  .navbar-hamburger {
+    padding: 6px;
+  }
+
+  .hamburger-line {
+    width: 20px;
+  }
+
+  /* Mobile slide-out menu width */
+  .mobile-menu {
+    width: 100vw;
+    padding: 70px 20px 24px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .hero-greeting {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+    gap: 6px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .hero-avatar-ring {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-stats {
+    gap: 16px;
+  }
+
+  .hero-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.72rem;
+  }
+
+  /* Floating badges: hide on smallest screens to avoid overflow */
+  .hero-floating-badge-1,
+  .hero-floating-badge-2 {
+    display: none;
+  }
+
+  /* ── Buttons ── */
+  .btn-lg {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 11px 20px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* ── Section headers ── */
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .section-tag {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+  }
+
+  /* ── Service cards ── */
+  .service-card {
+    padding: 20px 16px;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-desc {
+    font-size: 0.82rem;
+  }
+
+  /* ── Project / Blog cards ── */
+  .project-card-body,
+  .blog-card-body {
+    padding: 16px;
+  }
+
+  /* ── Contact page ── */
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .contact-info-item {
+    padding: 14px 12px;
+    gap: 12px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    padding: 40px 0 24px;
+  }
+
+  .footer-logo {
+    font-size: 1.2rem;
+  }
+
+  .footer-desc {
+    font-size: 0.8rem;
+  }
+
+  .footer-title {
+    font-size: 0.78rem;
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+  }
+
+  /* ── Misc ── */
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .section-header {
+    margin-bottom: clamp(24px, 5vw, 48px);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}

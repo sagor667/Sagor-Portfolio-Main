@@ -167,7 +167,7 @@ async function main() {
     { key: 'hero_title_en', value: 'Building Powerful WordPress Websites' },
     { key: 'hero_title_bn', value: 'শক্তিশালী ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করছি' },
     { key: 'hero_subtitle_en', value: 'I craft high-performance full-stack web applications and custom WordPress websites that convert visitors into clients.' },
-    { key: 'hero_subtitle_bn', value: 'আমি উন্নত মানের ফুলস্ট্যাক ওয়েব অ্যাপ্লিকেশন এবং দৃষ্টিনন্দন ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করি যা দর্শকদের ক্লায়েন্টে রূপান্তরিত করে।' },
+    { key: 'hero_subtitle_bn', value: 'আপনার ব্যবসার ডিজিটাল রূপান্তরে আমি দিচ্ছি আধুনিক ফুলস্ট্যাক ডেভেলপমেন্ট এবং কাস্টম ওয়ার্ডপ্রেস সলিউশন—যা কেবল সুন্দরই নয়, বরং আপনার ব্যবসার সেলস বাড়াতেও সাহায্য করবে।' },
     { key: 'whatsapp', value: '+8801XXXXXXXXX' },
     { key: 'email', value: 'sagor@example.com' },
     { key: 'location', value: 'Dhaka, Bangladesh' },

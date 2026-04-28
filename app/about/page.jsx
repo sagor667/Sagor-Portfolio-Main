@@ -12,40 +12,53 @@ export default function AboutPage() {
       subtitle: 'Passionate about creating digital experiences that map to business success.',
       storyTitle: 'My Story',
       storyText: [
-        'I am Md Sagor Ahmed, a dedicated WordPress Developer and Web Designer based in Bangladesh. With over 5 years of experience in the web development industry, I specialize in creating high-performance, secure, and visually appealing WordPress websites.',
-        'My journey started with a deep curiosity about how websites operate, which led me to dive deep into PHP, JavaScript, and modern front-end frameworks. Today, I help businesses worldwide establish a strong online presence through custom WordPress themes and complex WooCommerce integrations.',
-        'I believe in a user-centric approach where design meets functionality. Every project I undertake is built with SEO, speed, and accessibility in mind, ensuring my clients not only get a beautiful website but also a powerful marketing tool.',
+        'I am Md Sagor Ahmed, a dedicated Full-Stack Web Developer and WordPress Developer based in Bangladesh. With over 5 years of experience in the web development industry, I specialize in creating high-performance, secure, and visually appealing web applications and WordPress websites.',
+        'My journey started with a deep curiosity about how websites operate, which led me to dive deep into modern front-end and back-end frameworks including Next.js, React, Node.js, and PHP. Today, I help businesses worldwide establish a strong online presence through full-stack web solutions, custom WordPress themes, and complex WooCommerce integrations.',
+        'I believe in a user-centric approach where design meets robust functionality. Every project I undertake is built with scalability, SEO, speed, and accessibility in mind, ensuring my clients not only get a beautiful application but also a powerful business tool.',
       ],
       skillsTitle: 'Core Skills',
       skills: [
-        { name: 'Wordpress', icon: '📝' },
-        { name: 'WooCommerce', icon: '🛒' },
+        { name: 'Full-Stack Development', icon: '💻' },
+        { name: 'WordPress & WooCommerce', icon: '📝' },
+        { name: 'React & Next.js', icon: '⚛️' },
+        { name: 'Node.js & Express', icon: '🚂' },
         { name: 'PHP & MySQL', icon: '🐘' },
-        { name: 'JavaScript / React', icon: '⚛️' },
-        { name: 'HTML & CSS', icon: '🎨' },
-        { name: 'SEO Optimization', icon: '📈' },
-        { name: 'Web Performance', icon: '⚡' },
-        { name: 'Tailwind & Next.js', icon: '🚀' },
+        { name: 'Tailwind & Modern CSS', icon: '🎨' },
+        { name: 'API Development', icon: '🔌' },
+        { name: 'Performance & SEO', icon: '⚡' },
       ],
       experienceTitle: 'Experience',
       experience: [
         {
-          date: '2021 - Present',
-          title: 'Senior WordPress Developer',
+          date: '2024 - Present',
+          title: 'Full-Stack & Sr. WordPress Developer',
           company: 'Freelance & Upwork',
-          desc: 'Architecting and developing custom WordPress solutions for international clients. Managing end-to-end project lifecycles from design to deployment.'
+          desc: 'Architecting and developing custom full-stack web applications and WordPress solutions for international clients. Managing end-to-end project lifecycles from database design to frontend deployment.'
         },
         {
-          date: '2019 - 2021',
-          title: 'Web Developer',
+          date: '2023 - 2024',
+          title: 'Full-Stack Web Developer',
           company: 'Local IT Agency',
-          desc: 'Built responsive business websites and e-commerce stores. Handled website maintenance, security audits, and performance optimization for 50+ clients.'
+          desc: 'Built robust business web applications and WooCommerce stores. Handled API integrations, website maintenance, and performance optimization for 50+ clients.'
         },
         {
-          date: '2018 - 2019',
-          title: 'Junior Front-End Developer',
+          date: '2022 - 2023',
+          title: 'Front-End Developer',
           company: 'Tech Startup',
-          desc: 'Assisted in developing user interfaces using modern CSS and JavaScript. Converted PSD/Figma designs to fully functional HTML templates.'
+          desc: 'Assisted in developing dynamic user interfaces using React, Next.js, and modern CSS. Converted Figma designs into fully functional interactive front-end templates.'
+        }
+      ],
+      educationTitle: 'Education',
+      education: [
+        {
+          date: '',
+          title: 'Diploma in Civil Engineering',
+          institute: 'Mymensingh Polytechnic Institute'
+        },
+        {
+          date: '',
+          title: 'Secondary School Certificate (SSC)',
+          institute: 'Tirutha Sattyapir High School'
         }
       ],
       cta: 'Ready to start a project?',
@@ -56,40 +69,53 @@ export default function AboutPage() {
       subtitle: 'আপনার ব্যবসায়ের সাফল্য নিশ্চিত করতে আধুনিক ডিজিটাল অভিজ্ঞতা তৈরিতে আমি নিবেদিত।',
       storyTitle: 'আমার গল্প',
       storyText: [
-        'আমি মো. সাগর আহমেদ, বাংলাদেশের একজন নিবেদিত ওয়ার্ডপ্রেস ডেভেলপার এবং ওয়েব ডিজাইনার। গত ৫ বছরেরও বেশি সময় ধরে আমি দেশি-বিদেশি বিভিন্ন ক্লায়েন্টের জন্য উচ্চ-মানের, নিরাপদ এবং দৃষ্টিনন্দন ওয়েবসাইট তৈরি করে আসছি।',
-        'আমার ওয়েব ডেভেলপমেন্ট যাত্রা শুরু হয়েছিল কৌতূহল থেকে—কিভাবে একটি ওয়েবসাইট কাজ করে তা জানার আগ্রহ থেকে। ধাপে ধাপে আমি পিএইচপি, জাভাস্ক্রিপ্ট এবং আধুনিক ফ্রন্ট-এন্ড টেকনোলজিতে দক্ষতা অর্জন করি। আজ আমি বিশ্বজুড়ে ছড়িয়ে থাকা আমার ক্লায়েন্টদের কাস্টম থিম এবং জটিল ই-কমার্স সমাধান প্রদানের মাধ্যমে তাদের ব্যবসার অনলাইন উপস্থিতি মজবুত করতে সাহায্য করছি।',
-        'আমি বিশ্বাস করি একটি সফল ওয়েবসাইট কেবল সুন্দর হলেই চলে না, তার কার্যকারিতাও হতে হয় অতুলনীয়। প্রতিটি প্রজেক্টে আমি এসইও, স্পিড এবং ইউজার এক্সপেরিয়েন্সের ওপর সর্বোচ্চ গুরুত্ব দেই, যাতে আমার ক্লায়েন্টরা কেবল একটি ওয়েবসাইট নয়, বরং একটি শক্তিশালী মার্কেটিং টুল পায়।',
+        '"হ্যালো, আমি মো. সাগর আহমেদ। গত ৫ বছরেরও বেশি সময় ধরে কাজ করছি ফুল-স্ট্যাক ওয়েব ডেভেলপমেন্ট এবং ওয়ার্ডপ্রেস নিয়ে। কৌতূহল থেকে শুরু হওয়া এই যাত্রায় আজ আমি Next.js, React এবং Node.js-এর মতো আধুনিক টেকনোলজি ব্যবহার করে জটিল সব ডিজিটাল সমস্যার সমাধান করছি।',
+        'আমি মনে করি, একটি ওয়েবসাইট বা অ্যাপ্লিকেশন কেবল সুন্দর দেখালেই হয় না, সেটির পারফরম্যান্স হতে হয় নিখুঁত। তাই আমি এমন সব কাস্টম ই-কমার্স এবং ওয়েব সলিউশন তৈরি করি যা শুধু দৃষ্টিনন্দনই নয়, বরং স্কেলেবল এবং এসইও ফ্রেন্ডলি।',
+        'দেশি-বিদেশি অসংখ্য ক্লায়েন্টের সাথে কাজ করার অভিজ্ঞতায় আমি বুঝেছি, একটি সঠিক টেকনিক্যাল সলিউশন কীভাবে একটি ব্যবসাকে বদলে দিতে পারে। আপনি যদি আপনার ব্যবসার অনলাইন উপস্থিতিকে পরবর্তী ধাপে নিয়ে যেতে চান, তবে আমি আছি আপনার পাশে।',
       ],
       skillsTitle: 'মূল দক্ষতাসমূহ',
       skills: [
-        { name: 'ওয়ার্ডপ্রেস', icon: '📝' },
-        { name: 'ই-কমার্স (Woo)', icon: '🛒' },
+        { name: 'ফুল-স্ট্যাক ডেভেলপমেন্ট', icon: '💻' },
+        { name: 'ওয়ার্ডপ্রেস ও উকমার্স', icon: '📝' },
+        { name: 'রিঅ্যাক্ট ও নেক্সট.জেএস', icon: '⚛️' },
+        { name: 'নোড.জেএস ও এক্সপ্রেস', icon: '🚂' },
         { name: 'পিএইচপি ও মাইএসকিউএল', icon: '🐘' },
-        { name: 'জাভাস্ক্রিপ্ট / রিঅ্যাক্ট', icon: '⚛️' },
-        { name: 'এইচটিএমএল ও সিএসএস', icon: '🎨' },
-        { name: 'এসইও অপ্টিমাইজেশন', icon: '📈' },
-        { name: 'ওয়েব পারফরম্যান্স', icon: '⚡' },
-        { name: 'টেইলউইন্ড ও নেক্সট.জেএস', icon: '🚀' },
+        { name: 'টেইলউইন্ড ও মডার্ন সিএসএস', icon: '🎨' },
+        { name: 'এপিআই ডেভেলপমেন্ট', icon: '🔌' },
+        { name: 'পারফরম্যান্স ও এসইও', icon: '⚡' },
       ],
       experienceTitle: 'কাজের অভিজ্ঞতা',
       experience: [
         {
-          date: '২০ ২০২১ - বর্তমান',
-          title: 'সিনিয়র ওয়ার্ডপ্রেস ডেভেলপার',
+          date: '২০২৪ - বর্তমান',
+          title: 'ফুল-স্ট্যাক এবং সিনিয়র ওয়ার্ডপ্রেস ডেভেলপার',
           company: 'ফ্রিল্যান্স এবং আপওয়ার্ক',
-          desc: 'আন্তর্জাতিক ক্লায়েন্টদের জন্য কাস্টম ওয়ার্ডপ্রেস সলিউশন ডিজাইন এবং ডেভেলপমেন্ট করা। প্রজেক্টের শুরু থেকে শেষ পর্যন্ত সম্পূর্ণ লাইফসাইকেল পরিচালনা।'
+          desc: 'আন্তর্জাতিক ক্লায়েন্টদের জন্য কাস্টম ফুল-স্ট্যাক ওয়েব অ্যাপ্লিকেশন এবং ওয়ার্ডপ্রেস সলিউশন ডিজাইন ও ডেভেলপমেন্ট করা। ডেটাবেস ডিজাইন থেকে শুরু করে সম্পূর্ণ প্রজেক্ট লাইফসাইকেল পরিচালনা।'
         },
         {
-          date: '২০ ২০১৯ - ২০২১',
-          title: 'ওয়েব ডেভেলপার',
+          date: '২০২৩ - ২০২৪',
+          title: 'ফুল-স্ট্যাক ওয়েব ডেভেলপার',
           company: 'লোকাল আইটি এজেন্সি',
-          desc: 'রেসপন্সিভ বিজনেস ওয়েবসাইট এবং ই-কমার্স স্টোর তৈরি করা। ৫০টিরও বেশি ক্লায়েন্টের জন্য ওয়েবসাইট রক্ষণাবেক্ষণ এবং পারফরম্যান্স অপ্টিমাইজেশন পরিচালনা করা।'
+          desc: 'উন্নত মানের বিজনেস ওয়েব অ্যাপ্লিকেশন এবং উকমার্স স্টোর তৈরি করা। এপিআই ইন্টিগ্রেশন, ওয়েবসাইট রক্ষণাবেক্ষণ এবং পারফরম্যান্স অপ্টিমাইজেশন পরিচালনা করা।'
         },
         {
-          date: '২০১৮ - ২০১৯',
-          title: 'জুনিয়র ফ্রন্ট-এন্ড ডেভেলপার',
+          date: '২০২২ - ২০২৩',
+          title: 'ফ্রন্ট-এন্ড ডেভেলপার',
           company: 'টেক স্টার্টআপ',
-          desc: 'আধুনিক সিএসএস এবং জাভাস্ক্রিপ্ট ব্যবহার করে ইউজার ইন্টারফেস তৈরিতে সহায়তা করা। ডিজাইন ফাইল থেকে কার্যকর এইচটিএমএল টেমপ্লেটে রূপান্তর করা।'
+          desc: 'রিঅ্যাক্ট, নেক্সট.জেএস এবং আধুনিক সিএসএস ব্যবহার করে ডায়নামিক ইউজার ইন্টারফেস তৈরিতে সহায়তা করা। ফিগমা ডিজাইন থেকে কার্যকর ইন্টারঅ্যাকটিভ টেমপ্লেটে রূপান্তর করা।'
+        }
+      ],
+      educationTitle: 'শিক্ষাগত যোগ্যতা',
+      education: [
+        {
+          date: '',
+          title: 'ডিপ্লোমা ইন সিভিল ইঞ্জিনিয়ারিং',
+          institute: 'ময়মনসিংহ পলিটেকনিক ইনস্টিটিউট'
+        },
+        {
+          date: '',
+          title: 'মাধ্যমিক স্কুল সার্টিফিকেট (এসএসসি)',
+          institute: 'তিরুথা সত্যপীর উচ্চ বিদ্যালয়'
         }
       ],
       cta: 'আপনি কি নতুন কোনো প্রজেক্ট শুরু করতে চাচ্ছেন?',
@@ -100,7 +126,7 @@ export default function AboutPage() {
   const text = t[lang] || t.en;
 
   return (
-    <div className="section" style={{ minHeight: '100vh', paddingTop: '140px' }}>
+    <div className="section" style={{ minHeight: '100vh', paddingTop: '100px' }}>
       <div className="container">
         
         {/* Header */}
@@ -174,6 +200,19 @@ export default function AboutPage() {
                   <h3 className="timeline-title">{exp.title}</h3>
                   <div className="timeline-company">{exp.company}</div>
                   <p className="timeline-desc">{exp.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Education */}
+            <h2 style={{ fontSize: '1.75rem', marginBottom: '32px', marginTop: '60px' }}>{text.educationTitle}</h2>
+            <div className="timeline">
+              {text.education.map((edu, i) => (
+                <div key={i} className="timeline-item animate-fade-left" style={{ animationDelay: `${i * 0.15}s` }}>
+                  <div className="timeline-dot"></div>
+                  {edu.date && <div className="timeline-date">{edu.date}</div>}
+                  <h3 className="timeline-title" style={!edu.date ? { marginTop: '0' } : {}}>{edu.title}</h3>
+                  <div className="timeline-company">{edu.institute}</div>
                 </div>
               ))}
             </div>

@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://sagorahmed.vercel.app/sitemap.xml', // 🔁 Replace with your real domain
+    sitemap: 'https://sagor-ahmed.vercel.app/sitemap.xml', // 🔁 Replace with your real domain
   };
 }

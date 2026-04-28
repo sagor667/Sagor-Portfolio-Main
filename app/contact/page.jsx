@@ -27,7 +27,7 @@ export default function ContactPage() {
   const text = t[lang] || t.en;
 
   return (
-    <div className="section" style={{ minHeight: '100vh', paddingTop: '140px' }}>
+    <div className="section" style={{ minHeight: '100vh', paddingTop: 'clamp(100px, 14vw, 140px)' }}>
       <div className="container">
         
         <div className="section-header">
